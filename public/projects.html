@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Emiliano Ramirez | Projects</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header  class="sticky">
+            <nav id="nav-bar">
+                <h1><a href="index.html">EMILIANO RAMIREZ</a></h1>
+
+                <a href="#" class="nav-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="projects.html" class="open">projects</a></li>
+                        <!-- <li><a href="speedruns.html">speedruns</a></li> -->
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>  
+                </div>
+            </nav>   
+        </header>
+        
+        <!--tonchi-->
+        <div class="container">
+            <div class="block">
+                <div class="block">
+                    <img class="img" src = "images/TonchiLogo.png" alt = "img not found">
+                </div>
+                <p class="p-len">Tonchi is a game I made with Unity based on my cat, Tonchi. Credits for the sound effects goes to <a href="https://soundbible.com/" target="_blank">soundbible.com</a> 
+                    . Everything else from the programming and art to the design and music was made by me. Developing this game has taught 
+                    me not only the process of making a game but also sticking through with a project until the end and deploying it.
+                    <a href="https://github.com/black112301/Tonchi" target="_blank">View the repository here.</a>
+                </p>
+            </div>
+
+            <div class="wrapper">
+                <div class="slide-wrapper">
+                    <div class="slides fade iframe-container">
+                        <iframe class="vid" allowfullscreen src="https://www.youtube.com/embed/2qUaQSczyNY?autoplay=1&mute=1&enablejsapi=1&rel=0"></iframe>
+                    </div>
+                
+                    <div class="slides fade">
+                        <img src="images/Tonchi1.png">
+                    </div>
+                
+                    <div class="slides fade">
+                        <img src="images/Tonchi2.png">
+                    </div>
+                    
+                    <div class="slides fade">
+                        <img src="images/Tonchi3.png">
+                    </div>
+                
+                    <div class="slides fade">
+                        <img src="images/Tonchi4.png">
+                    </div>
+                    
+                    <div class="slides fade">
+                        <img src="images/Tonchi5.png">
+                    </div>
+
+                    <div class="slides fade">
+                        <img src="images/Tonchi6.png">
+                    </div>
+                </div>
+              
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="row">
+                    <div class="col">
+                        <img class="select cursor" src="images/TonchiThumb.png" onclick="currentSlide(1)">
+                    </div>
+                    <div class="col">
+                        <img class="select cursor" src="images/Tonchi1.png" onclick="currentSlide(2)">
+                    </div>
+                    <div class="col">
+                        <img class="select cursor" src="images/Tonchi2.png" onclick="currentSlide(3)">
+                    </div>
+                    <div class="col">
+                        <img class="select cursor" src="images/Tonchi3.png" onclick="currentSlide(4)">
+                    </div>
+                    <div class="col">
+                        <img class="select cursor" src="images/Tonchi4.png" onclick="currentSlide(5)">
+                    </div>    
+                    <div class="col">
+                        <img class="select cursor" src="images/Tonchi5.png" onclick="currentSlide(6)">
+                    </div>
+                    <div class="col">
+                        <img class="select cursor" src="images/Tonchi6.png" onclick="currentSlide(7)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <p class="p-len">The year is 2035. Planet Critter. The world is being invaded by an alien race known as the Zerg.
+                Kitty City has fallen and Empress Meow has been abducted. You, Tonchi, are sent to investigate their 
+                mothership in hopes of rescuing her before it is too late. The fate of the empress is in your hands.
+            </p> -->
+        </div>
+
+        <div class="container">
+            <div class="block">
+                <a href="speedruns.html">Click here to check out the speedruns leaderboard!</a>
+            </div>
+
+            <div class="block">
+                <a href="about.html">More Info</a>
+            </div>
+
+            <div class="dl-wrap">
+                Download for Windows v1.1
+                <a class = "dl" href = "dlFiles/Tonchi Setup (x86).exe" download="Tonchi Setup (x86).exe">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!--emiram-->
+        <div class="container">
+            <div class="block">
+                <div class="block">
+                    <img class="img" src = "images/EmiramLogo2.png" alt = "img not found" width = 200px>
+                </div>
+                <p class="p-len">I've always liked the idea of making my own website to host my games so after making Tonchi I decided to take on web dev to accomplish this goal while 
+                    learning web devovelopment at the same time. Also being a fan of speedrunning, I added a section dedicated to that where users can submit their own personal 
+                    best times(of course I rank number 1 always :D). Although it's only my friends and I using the using the site, I still found it to be a great learning experience 
+                    as I got to learn html, css, js, and even a little nodejs for the backend.
+                    <a href="https://github.com/black112301/Emiram" target="_blank"> View the repository here.</a>
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            Copyright &copy 2021, Emiram created by Emiliano Ramirez.
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            //img carousel
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n)
+            {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n)
+            {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) 
+            {
+                const slides = document.getElementsByClassName("slides");
+                const select = document.getElementsByClassName("select");
+                var i;
+
+                if (n > slides.length)
+                    slideIndex = 1
+
+                if (n < 1)
+                    slideIndex = slides.length
+
+                for (i = 0; i < slides.length; i++)
+                {
+                    slides[i].style.display = "none";
+
+                    if(i != 1)
+                    {
+                        $('.slides').each(() => {
+                            $('.vid')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+                        })            
+                    }
+                }
+
+                for (i = 0; i < select.length; i++)
+                    select[i].className = select[i].className.replace(" active", "");
+                    
+                slides[slideIndex-1].style.display = "block";
+                select[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
