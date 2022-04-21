@@ -70,7 +70,7 @@ h2
 
 h3
 {
-    font-size: 62px;
+    font-size: 69px;
     line-height: 100%;
     margin-bottom: 3%;
     margin-right: 2%;
@@ -80,9 +80,18 @@ h3
 h4
 {
     font-family: consolas;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: lighter;
     color:  rgb(157, 157, 157);
+}
+
+h5
+{
+    font-family: consolas;
+    font-size: 18px;
+    font-weight: lighter;
+    color:  rgb(157, 157, 157);
+    margin-bottom: 3%;
 }
 
 nav
@@ -112,7 +121,9 @@ nav ul li
 
 p
 {
-    margin: 10% auto;
+    margin: 8% auto;
+    margin-right: 8%;
+    font-size: 30px;
 }
 
 .container
@@ -120,7 +131,6 @@ p
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     margin: 5% 8%;
 }
 
@@ -181,12 +191,14 @@ img
     max-width: 100%;
     image-rendering: pixelated;
     display: block;
+    background-color: transparent;
 }
 
 video
 {
     max-width: 100%;
     display: block;
+    background-color: black;
 }
 
 a:link
@@ -223,6 +235,14 @@ footer
     h1
     {
         padding: 0 10%;
+    }
+}
+
+@media(max-width: 1550px)
+{
+    p
+    {
+        font-size: 25px;
     }
 }
 
@@ -263,6 +283,28 @@ footer
         left: 79.5%;
         z-index: 1;
     }
+
+    h3
+    {
+        margin-top: 1.5%;
+        margin-bottom: 0.25%;
+    }
+
+    h4
+    {
+        margin: auto;
+    }
+
+    h5
+    {
+        margin: auto;
+    }
+
+    p
+    {
+        font-size: 27px;
+        margin: 3% auto;
+    }
 }
 
 @media(max-width: 960px)
@@ -299,6 +341,16 @@ footer
     {
         font-size: 14px;
     }
+
+    h5
+    {
+        font-size: 13px;
+    }
+
+    p
+    {
+        font-size: 17px;
+    }
 }
 
 @media(max-width: 520px)
@@ -320,6 +372,11 @@ footer
 
     h4
     {
+        font-size: 14px;
+    }
+
+    h5
+    {
         font-size: 12px;
     }
 
@@ -329,6 +386,11 @@ footer
         list-style: none;
         margin: 20px 12px;
         color: #fff;
+    }
+
+    .description
+    {
+        min-width: 200px;
     }
 }
 
@@ -341,7 +403,7 @@ footer
 
     h2
     {
-        font-size: 10.5px;
+        font-size: 16px;
     }
 
     nav ul li
@@ -350,5 +412,11 @@ footer
         list-style: none;
         margin: 5px 5px;
         color: #fff;
+        font-size: 13px;
+    }
+
+    p
+    {
+        font-size: 14px;
     }
 }
