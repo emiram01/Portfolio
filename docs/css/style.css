@@ -8,6 +8,16 @@
     font-style: normal;
 }
 
+@font-face
+{
+    font-family: 'Consolas';
+    src: url('../fonts/Consolas.eot');
+    src: url('../fonts/Consolas.woff') format('woff'),
+         url('../fonts/Consolas.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *
 {
     margin: 0;
@@ -79,7 +89,7 @@ h3
 
 h4
 {
-    font-family: consolas;
+    font-family: 'Consolas'; 
     font-size: 26px;
     font-weight: lighter;
     color:  rgb(157, 157, 157);
@@ -87,7 +97,7 @@ h4
 
 h5
 {
-    font-family: consolas;
+    font-family: 'Consolas'; 
     font-size: 18px;
     font-weight: lighter;
     color:  rgb(157, 157, 157);
