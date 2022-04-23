@@ -1,9 +1,7 @@
 @font-face
 {
     font-family: 'SofiaPro-Bold';
-    src: url('../fonts/SofiaPro-Bold.eot');
-    src: url('../fonts/SofiaPro-Bold.woff') format('woff'),
-         url('../fonts/SofiaPro-Bold.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/SofiaPro-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,12 +9,11 @@
 @font-face
 {
     font-family: 'Consolas';
-    src: url('../fonts/Consolas.eot');
-    src: url('../fonts/Consolas.woff') format('woff'),
-         url('../fonts/Consolas.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/Consolas.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 
 *
 {
@@ -315,6 +312,11 @@ footer .wrapper
 {
     text-align: right;
     margin-right: 0%;
+}
+
+.copyright
+{
+    padding-bottom: 1%;
 }
 
 @media(min-width: 1850px)
