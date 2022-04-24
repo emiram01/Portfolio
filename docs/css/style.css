@@ -14,7 +14,6 @@
     font-style: normal;
 }
 
-
 *
 {
     margin: 0;
@@ -89,7 +88,7 @@ h4
     font-family: 'Consolas'; 
     font-size: 26px;
     font-weight: lighter;
-    color:  rgb(157, 157, 157);
+    color:  rgb(178, 178, 178);
 }
 
 h5
@@ -97,8 +96,7 @@ h5
     font-family: 'Consolas'; 
     font-size: 18px;
     font-weight: lighter;
-    color:  rgb(157, 157, 157);
-    margin-bottom: 3%;
+    color:  rgb(178, 178, 178);
 }
 
 h6
@@ -137,7 +135,7 @@ nav ul li
 
 p
 {
-    margin: 8% auto;
+    margin: 5% auto;
     margin-right: 8%;
     font-size: 30px;
 }
@@ -174,7 +172,6 @@ p
     margin-right: 0%;
     margin-left: 2%;
 }
-
 
 .content-box
 {
@@ -234,6 +231,23 @@ video
     max-width: 100%;
     display: block;
     background-color: black;
+}
+
+.repo
+{
+    font-family: 'Consolas';
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0%;
+    margin-right: 13%;
+    display: block;
+    text-align: right;
+}
+
+.description2 .repo
+{
+    margin-left: 13%;
+    text-align: left;
 }
 
 a:link
@@ -384,8 +398,8 @@ footer .wrapper
 
     h3
     {
-        margin-top: 1.5%;
-        margin-bottom: 0.25%;
+        margin-bottom: 1%;
+        margin-bottom: 1%;
     }
 
     h4
@@ -395,7 +409,7 @@ footer .wrapper
 
     h5
     {
-        margin: auto;
+        display: none;
     }
 
     p
@@ -439,6 +453,19 @@ footer .wrapper
     #contact
     {
         margin-left: 2%;
+    }
+
+    .repo
+    {
+        margin: auto;
+        margin-bottom: 2%;
+    }
+
+    .description2 .repo
+    {
+        margin: auto;
+        margin-bottom: 2%;
+        text-align: right;
     }
 }
 
@@ -486,6 +513,11 @@ footer .wrapper
     {
         font-size: 17px;
     }
+
+    .repo
+    {
+        font-size: 13px;
+    }
 }
 
 @media(max-width: 520px)
@@ -511,6 +543,11 @@ footer .wrapper
     }
 
     h5
+    {
+        font-size: 12px;
+    }
+
+    .repo
     {
         font-size: 12px;
     }
