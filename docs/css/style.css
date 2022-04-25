@@ -261,10 +261,13 @@ a:visited
     color: rgb(178, 178, 178);
 }  
 
-button:hover, a:hover
+@media (hover: hover) and (pointer: fine)
 {
-    color: black;
-    transition: 0.25s;
+    button:hover, a:hover
+    {
+        color: black;
+        transition: 0.25s;
+    }
 }
 
 button:active, a:active{
