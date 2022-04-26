@@ -234,10 +234,10 @@ img
 
 video
 {
-    max-width: 100%;
-    height: auto;
+    max-width: 60%;
     display: block;
     background-color: black;
+    object-fit: cover;
 }
 
 .repo
@@ -392,7 +392,7 @@ footer .wrapper
     {
         position: absolute;
         width: 17%;
-        top: 85%;
+        top: 86%;
         left: 84%;
         z-index: 1;
     }
