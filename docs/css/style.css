@@ -432,6 +432,11 @@ footer .wrapper
     {
         order: 2;
     }
+
+    .video
+    {
+        max-width: 100%;
+    }
     
     .description
     {
