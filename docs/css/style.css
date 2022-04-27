@@ -432,11 +432,6 @@ footer .wrapper
     {
         order: 2;
     }
-
-    video
-    {
-        max-width: 100%;
-    }
     
     .description
     {
@@ -481,6 +476,14 @@ footer .wrapper
         margin: auto;
         margin-bottom: 2%;
         text-align: right;
+    }
+}
+
+@media(max-width: 1297.9999px) 
+{
+    video
+    {
+        max-width: 100%;
     }
 }
 
