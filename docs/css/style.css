@@ -375,7 +375,7 @@ footer .wrapper
         position: absolute;
         width: 31%;
         top: 85.5%;
-        left: 71.5%;
+        left: 71.25%;
         z-index: 1;
     }
     
@@ -494,6 +494,18 @@ footer .wrapper
     h2
     {
         font-size: 52.5px;
+    }
+
+    #logo1
+    {
+        top: 87%;
+        left: 71%;
+    }
+
+    #logo3
+    {
+        top: 87%;
+        left: 84%;
     }
 }
 
