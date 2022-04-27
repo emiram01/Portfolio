@@ -477,10 +477,7 @@ footer .wrapper
         margin-bottom: 2%;
         text-align: right;
     }
-}
 
-@media(max-width: 1297.9999px) 
-{
     video
     {
         max-width: 100%;
