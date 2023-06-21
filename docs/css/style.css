@@ -11,7 +11,7 @@
     --logo-size-lg: clamp(5em, 20vw + 1em, 20em);
     --logo-size-sm: clamp(2.5em, 10vw + 1em, 10em);
 
-    --clr-primary: #f8f7f3;
+    --clr-primary: #F8F7F3;
     --clr-secondary: #292929;
     --clr-neutral: #B2B2B2;
 
@@ -70,7 +70,7 @@ p {
 
 nav {
     position: sticky;
-    top: 0;
+    top: 0rem;
     text-align: center;
     z-index: 2;
 }
@@ -107,7 +107,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     margin: 2rem 2.5rem;
 }
 
@@ -169,20 +169,11 @@ a:link, :visited {
 
 .repo {
     font-family: var(--ff-secondary);
-    font-size: var(--fs-xs);
-    background-color: rgb(96 165 250);
-    color: var(--clr-primary);
+    font-size: var(--fs-sm);
+    color: var(--clr-neutral);
     font-weight: 600;
-    padding: .5rem;
     margin-top: 1rem;
-    border-radius: .5rem;
     float: right;
-}
-
-.repo:hover {
-    background-color: rgb(59 130 246);
-    color: var(--clr-primary);
-    transition: 0.25s;
 }
 
 button {
@@ -194,11 +185,6 @@ button {
     cursor: pointer;
 }
 
-button:hover, a:hover {
-    color: var(--clr-secondary);
-    transition: 0.25s;
-}
-
 footer * {
     background-color: var(--clr-secondary);
     color: var(--clr-primary);
@@ -206,13 +192,13 @@ footer * {
 }
 
 footer p {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-md);
     margin: 1rem 0;
 }
 
 #about {
     max-width: 100rem;
-    padding: 5rem 3rem;
+    padding: 5rem 3rem 0 3rem;
 }
 
 #contact {
@@ -221,18 +207,40 @@ footer p {
     padding: 5rem 3rem;
 }
 
-#contact p {
-    font-family: var(--ff-primary);
-}
-
-#contact a {
-    font-size: var(--fs-xs);
+#contact a, #contact button {
+    font-size: var(--fs-md);
+    font-family: var(--ff-secondary);
     color: var(--clr-primary);
+    width: 4rem;
     font-weight: 800;
-    display: inline-block;
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 1rem;
+    background: none;
 }
 
+.icon {
+    margin-left: .5rem;
+    width: 1.25rem;
+    background: none;
+}
+
+#popup {
+    position: fixed;
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+    font-size: var(--fs-md);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border: .25rem solid var(--clr-secondary);
+    border-color: var(--clr-secondary);
+    border-radius: 1rem;
+    display: none;
+}
 
 @media (min-width: 50em) {
     nav ul li {
@@ -249,7 +257,7 @@ footer p {
         margin: 1rem 0;
     }
 
-    #contact a {
+    #contact a, #contact button{
         font-size: var(--fs-md);
     }
 
@@ -263,13 +271,17 @@ footer p {
     }
 
     .project {
-        gap: 3rem;
         margin: 6rem 7rem;
+    }
+    
+    .icon {
+        width: 2rem;
     }
 }
 
 @media (min-width: 80em) {
     .project {
+        gap: 3rem;
         flex-wrap: nowrap;
     }
 
@@ -299,5 +311,20 @@ footer p {
     .four {
         bottom: -1.75em;
         left: -2em;
+    }
+}
+
+@media (hover: hover) and (pointer: fine)
+{
+    button:hover, a:hover
+    {
+        color: var(--clr-secondary);
+        transition: 0.25s;
+    }
+
+    #contact a:hover, #contact button:hover
+    {
+        filter: brightness(75%);
+        transition: 0.25s;
     }
 }
