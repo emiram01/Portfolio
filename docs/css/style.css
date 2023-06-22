@@ -11,7 +11,8 @@
     --logo-size-lg: clamp(5em, 20vw + 1em, 20em);
     --logo-size-sm: clamp(2.5em, 10vw + 1em, 10em);
 
-    --video-size-lg: clamp(4em, 10vw + 1em, 11em);
+    --video-size-md: clamp(4em, 10vw + 1em, 11em);
+    --video-size-lg: clamp(7em, 25vw + 1em, 17em);
     --video-size-sm: clamp(1em, 16vw + 1em, 16em);
 
     --clr-primary: #F8F7F3;
@@ -131,7 +132,7 @@ video {
     border: .25rem solid black;
     border-radius: .75rem;
     overflow: hidden;
-    background-color: var(--clr-secondary);
+    background-color: black;
 }
 
 img {
@@ -147,12 +148,39 @@ img {
     float: right;
 }
 
-.mobile-video {
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-video-primary {
+    width: var(--video-size-lg);
+    z-index: 1;
+}
+
+.mobile-video-secondary {
     position: absolute;
     width: var(--video-size-sm);
     z-index: 1;
     bottom: 0;
-    left: .5em;
+}
+
+.bg-mobile-left, .bg-mobile-right {
+    position: absolute;
+    top: 1em;
+    border: .25rem solid black;
+    background-color: black;
+    border-radius: .75rem;
+    width: calc(var(--video-size-lg) - 1em);
+}
+
+.bg-mobile-left {
+    margin-right: 55%;
+}
+
+.bg-mobile-right {
+    margin-left: 55%;
 }
 
 .logo {
@@ -280,8 +308,9 @@ footer p {
         margin-top: 1rem;
     }
 
-    video {
-        border: .5rem solid black;
+    video, .bg-mobile-left, .bg-mobile-right {
+        border: .4rem solid black;
+        /* outline: .2rem solid #F8F7F3; */
         border-radius: 1.25rem;
     }
 
@@ -305,9 +334,18 @@ footer p {
         border-radius: 1.5rem;
     }
 
-    .mobile-video {
-        width: var(--video-size-lg);
+    .mobile-video-secondary {
+        width: var(--video-size-md);
     }
+
+    .bg-mobile-left {
+        margin-right: 62%;
+    }
+    
+    .bg-mobile-right {
+        margin-left: 62%;
+    }
+    
 
     .right .description {
         text-align: right;
