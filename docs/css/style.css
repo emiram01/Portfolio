@@ -5,7 +5,7 @@
     font-weight: 600;
     src: url('../fonts/montserrat-v25-latin-600.woff2') format('woff2');
 }
-  
+
 @font-face {
     font-display: swap;
     font-family: 'Montserrat';
@@ -15,11 +15,11 @@
 }
 
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/inter-v12-latin-600.woff2') format('woff2'); 
+    src: url('../fonts/inter-v12-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -50,7 +50,7 @@
     --ff-primary: "Montserrat", sans-serif;
     --ff-secondary: "Inter", sans-serif;
 
-    --fs-xl: clamp(3.15rem, 10vw + 1rem, 12rem);
+    --fs-xl: clamp(3.15rem, 10vw + 1rem, 10rem);
     --fs-lg: clamp(1.25rem, 3.5vw + 1rem, 4rem);
     --fs-md: clamp(1rem, 1vw + 1rem, 1.75rem);
     --fs-sm: clamp(1rem, 1vw + .5rem, 1.25rem);
@@ -168,6 +168,8 @@ main {
 
 .description {
     flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .visual {
@@ -184,9 +186,9 @@ video {
 }
 
 img {
-    image-rendering:-moz-crisp-edges;
-    image-rendering:-o-crisp-edges;  
-    image-rendering:-webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
     image-rendering: pixelated;
     background-color: transparent;
 }
@@ -197,7 +199,7 @@ img {
 }
 
 .desktop-video.right {
-    float : left;
+    float: left;
 }
 
 .mobile {
@@ -222,7 +224,8 @@ img {
     right: 0;
 }
 
-.bg-mobile-left, .bg-mobile-right {
+.bg-mobile-left,
+.bg-mobile-right {
     position: absolute;
     top: 1em;
     border: .25rem solid black;
@@ -255,13 +258,15 @@ img {
     right: -.25em;
 }
 
-.three, .four {
+.three,
+.four {
     width: var(--logo-size-sm);
     bottom: -.05em;
     right: -.2em;
 }
 
-a:link, :visited {
+a:link,
+:visited {
     color: var(--clr-neutral);
     text-decoration-line: none;
 }
@@ -271,7 +276,7 @@ a:link, :visited {
     font-size: var(--fs-xs);
     color: var(--clr-neutral);
     font-weight: 600;
-    float: right;
+    align-self: flex-end;
 }
 
 button {
@@ -305,7 +310,8 @@ footer p {
     padding: 5rem 3rem;
 }
 
-#contact a, #contact button {
+#contact a,
+#contact button {
     font-size: var(--fs-md);
     font-family: var(--ff-secondary);
     color: var(--clr-primary);
@@ -356,7 +362,8 @@ footer p {
         margin: 1rem 0;
     }
 
-    #contact a, #contact button{
+    #contact a,
+    #contact button {
         font-size: var(--fs-md);
     }
 
@@ -364,7 +371,9 @@ footer p {
         margin-top: 1rem;
     }
 
-    video, .bg-mobile-left, .bg-mobile-right {
+    video,
+    .bg-mobile-left,
+    .bg-mobile-right {
         border: .4rem solid black;
         /* outline: .2rem solid #F8F7F3; */
         border-radius: 1.25rem;
@@ -373,7 +382,7 @@ footer p {
     .project {
         margin: 2rem 2.5rem;
     }
-    
+
     .icon {
         width: 2rem;
     }
@@ -397,30 +406,30 @@ footer p {
     .bg-mobile-left {
         margin-right: 62%;
     }
-    
+
     .bg-mobile-right {
         margin-left: 62%;
     }
-    
+
 
     .right .description {
         text-align: right;
     }
 
     .right .repo {
-        float: left;
+        align-self: flex-start;
     }
 
     .one {
         bottom: -1em;
         right: -3.75em;
     }
-    
+
     .two {
         bottom: -1.5em;
         left: -2em;
     }
-    
+
     .three {
         bottom: -2em;
         right: -2em;
@@ -433,16 +442,16 @@ footer p {
     }
 }
 
-@media (hover: hover) and (pointer: fine)
-{
-    button:hover, a:hover
-    {
+@media (hover: hover) and (pointer: fine) {
+
+    button:hover,
+    a:hover {
         color: var(--clr-secondary);
         transition: 0.25s;
     }
 
-    #contact a:hover, #contact button:hover
-    {
+    #contact a:hover,
+    #contact button:hover {
         filter: brightness(75%);
         transition: 0.25s;
     }
